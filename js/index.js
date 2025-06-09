@@ -1,4 +1,11 @@
 $(function () {
+    let win = $(window).height();
+    console.log(win);
+    $("#con05 section").height(win);
+
+    console.log("section", win);
+
+
     //header
     Splitting();
 
@@ -114,7 +121,7 @@ $(function () {
     let con05 = $("#con05").offset().top;
     let con06 = $("#con06").offset().top;
 
-    console.log(visual, con01, con02, con03, con04,con05,con06);
+    console.log(visual, con01, con02, con03, con04, con05, con06);
 
     $(window).on("scroll", function () {
         let sc = $(this).scrollTop();
