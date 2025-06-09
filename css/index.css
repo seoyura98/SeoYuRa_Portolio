@@ -370,6 +370,9 @@ body {
     word-wrap: break-word;
   }
 
+  #con01 .inner .right .about .text_box .text {
+    word-wrap: break-word;
+  }
 
   #con01 .inner .right .about .text_box .blink {
     animation: blink 0.5s infinite;
@@ -1223,8 +1226,9 @@ body {
     position: absolute;
     right: 11%;
     top: 3%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     cursor: pointer;
+
   }
 
   #con05 #modalContent h2 {
@@ -1364,6 +1368,7 @@ body {
     text-align: left;
     padding-left: 1rem;
     box-sizing: border-box;
+    word-wrap: break-word
   }
 
   #con06 .com .txt h4 {
@@ -1375,10 +1380,9 @@ body {
 
   #con06 .com .txt p {
     font-size: 2.3vw;
-    word-wrap: break-word;
     line-height: 1.5;
     letter-spacing: 1px;
-    word-break: break-all;
+
   }
 
   #con06 .com .txt .infor {
@@ -1713,6 +1717,9 @@ body {
     word-wrap: break-word;
   }
 
+  #con01 .inner .right .about .text_box .text {
+    word-wrap: break-word;
+  }
 
   #con01 .inner .right .about .text_box .blink {
     animation: blink 0.5s infinite;
@@ -2709,6 +2716,7 @@ body {
     text-align: left;
     padding-left: 1rem;
     box-sizing: border-box;
+    word-wrap: break-word
   }
 
   #con06 .com .txt h4 {
@@ -2720,10 +2728,8 @@ body {
 
   #con06 .com .txt p {
     font-size: 2.5vw;
-    word-wrap: break-word;
     line-height: 1.5;
     letter-spacing: 1px;
-    word-break: break-all;
   }
 
   #con06 .com .txt .infor {
@@ -3052,6 +3058,10 @@ body {
     line-height: 1.3;
     letter-spacing: 1px;
     box-sizing: border-box;
+    word-wrap: break-word;
+  }
+
+  #con01 .inner .right .about .text_box .text {
     word-wrap: break-word;
   }
 
@@ -4051,6 +4061,7 @@ body {
     text-align: left;
     padding-left: 1rem;
     box-sizing: border-box;
+    word-wrap: break-word
   }
 
   #con06 .com .txt h4 {
@@ -4062,10 +4073,8 @@ body {
 
   #con06 .com .txt p {
     font-size: 2.3vw;
-    word-wrap: break-word;
     line-height: 1.5;
     letter-spacing: 1px;
-    word-break: break-all;
   }
 
   #con06 .com .txt .infor {
@@ -4396,6 +4405,11 @@ body {
     letter-spacing: 1px;
     line-height: 1.3;
     box-sizing: border-box;
+    word-wrap: break-word;
+  }
+
+
+  #con01 .inner .right .about .text_box .text {
     word-wrap: break-word;
   }
 
@@ -5385,6 +5399,7 @@ body {
     text-align: left;
     padding-left: 1rem;
     box-sizing: border-box;
+    word-wrap: break-word
   }
 
   #con06 .com .txt h4 {
@@ -5396,10 +5411,8 @@ body {
 
   #con06 .com .txt p {
     font-size: 2vw;
-    word-wrap: break-word;
     line-height: 1.5;
     letter-spacing: 1px;
-    word-break: break-all;
   }
 
   #con06 .com .txt .infor {
@@ -5715,6 +5728,9 @@ body {
     word-wrap: break-word;
   }
 
+  #con01 .inner .right .about .text_box .text {
+    word-wrap: break-word;
+  }
 
   #con01 .inner .right .about .text_box .blink {
     animation: blink 0.5s infinite;
@@ -6704,6 +6720,7 @@ body {
     text-align: left;
     padding-left: 1rem;
     box-sizing: border-box;
+    word-wrap: break-word
   }
 
   #con06 .com .txt h4 {
@@ -6715,10 +6732,8 @@ body {
 
   #con06 .com .txt p {
     font-size: 1.5vw;
-    word-wrap: break-word;
     line-height: 1.5;
     letter-spacing: 1px;
-    word-break: break-all;
   }
 
   #con06 .com .txt .infor {
