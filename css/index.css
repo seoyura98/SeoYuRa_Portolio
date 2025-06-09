@@ -958,7 +958,8 @@ body {
     height: 100vh;
     margin: 0px auto;
     color: #222;
-
+    padding-bottom: 2rem;
+    box-sizing: border-box;
   }
 
   #con05 .story {
@@ -2304,6 +2305,8 @@ body {
     height: 100vh;
     margin: 0px auto;
     color: #222;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
 
   }
 
@@ -3651,6 +3654,8 @@ body {
     height: 100vh;
     margin: 0px auto;
     color: #222;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
 
   }
 
@@ -6311,6 +6316,7 @@ body {
   section {
     width: 90%;
     height: 100vh;
+    box-sizing: border-box;
     margin: 0px auto;
     color: #222;
 
