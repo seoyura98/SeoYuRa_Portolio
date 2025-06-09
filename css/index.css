@@ -1040,7 +1040,7 @@ body {
   /*right*/
   .cloneWarp .contBox .right {
     width: 80%;
-    height: 60%;
+    /* height: 60%; */
     margin: 0px auto;
   }
 
