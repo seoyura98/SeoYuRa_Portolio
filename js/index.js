@@ -1,10 +1,4 @@
 $(function () {
-    let win = $(window).height();
-    console.log(win);
-    $("#con05 section").height(win);
-
-    console.log("section", win);
-
 
     //header
     Splitting();

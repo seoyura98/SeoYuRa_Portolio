@@ -6735,6 +6735,7 @@ body {
   #con06 .com .txt p {
     font-size: 1.5vw;
     line-height: 1.5;
+    margin-bottom: 0.4rem;
     letter-spacing: 1px;
     word-wrap: break-word
   }
@@ -6743,13 +6744,13 @@ body {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
+    padding-top: 0.6rem;
+    box-sizing: border-box;
   }
 
   #con06 .com .txt .infor p {
     font-size: 1.5vw;
     letter-spacing: 2px;
-    padding-top: 0.5rem;
-    box-sizing: border-box;
   }
 
 
