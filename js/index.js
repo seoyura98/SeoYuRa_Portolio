@@ -4,10 +4,10 @@ $(function () {
     Splitting();
 
     $(".bar").on("click", function () {
-        $("#modalBox").addClass("on");
+        $("header #modalBox").addClass("on");
     });
     $("#close").on("click", function () {
-        $("#modalBox").removeClass("on");
+        $("header #modalBox").removeClass("on");
     });
 
 
@@ -82,6 +82,68 @@ $(function () {
         $("#modal_box").removeClass("on");
     });
 
+    //con04
+
+    let total = $("#con04 .inner .wrap li:nth-child(2) > ul").length;
+    console.log(total);
+
+    let j = 0;
+    start01();
+
+    function start01() {
+        stop01 = setInterval(function () {
+            if (j == total - 1) {
+                j = 0;
+            } else {
+                j++;
+            }
+            fade();
+        }, 6000);
+    }
+
+    $("#con04 .next").on("click", function () {
+        clearInterval(stop01);
+        if (j == total - 1) {
+            j = 0;
+        } else {
+            j++;
+        }
+        fade();
+        start01();
+    });
+
+    $("#con04 .prev").on("click", function () {
+        clearInterval(stop01);
+        if (j == total - 1) {
+            j = 0;
+        } else {
+            j--;
+        }
+        fade();
+        start01();
+    });
+
+    start01();
+
+
+    function fade() {
+        $("#con04 .inner .wrap li:nth-child(2) > ul").fadeOut();
+        $("#con04 .inner .wrap li:nth-child(2) > ul").eq(j).fadeIn();
+    }
+
+    $("#con04 .museum .pro").on("click", function () {
+        $("#con04 .modalBox").addClass("on");
+    });
+    $("#con04 .xmark").on("click", function () {
+        $("#con04 .modalBox").removeClass("on");
+    });
+
+    $("#con04 .mayplace .pro").on("click", function () {
+        $("#con04 #modalBox").addClass("on");
+    });
+    $("#con04 #xmark").on("click", function () {
+        $("#con04 #modalBox").removeClass("on");
+    });
 
 
     //con05
@@ -105,6 +167,7 @@ $(function () {
     $("#con05 #xmark").on("click", function () {
         $("#con05 #modalBox").removeClass("on");
     });
+
 
     //scroll
     let visual = $("#visual").offset().top;
