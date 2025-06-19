@@ -1,5 +1,4 @@
 $(function () {
-
     //header
     Splitting();
 
@@ -10,18 +9,17 @@ $(function () {
         $("header #modalBox").removeClass("on");
     });
 
-
     //visual
     $("#visual .wrap").addClass("on");
 
     //con01
 
-    const content = "예전부터 손으로 사부작사부작 무언가를 만들어 주변사람들에게 선물하는 것을 좋아했습니다. \n\n 저로인해 누군가가 행복함을 느낀다라는 것이 저 자신에게도 행복함과 뿌듯함으로 다가왔습니다. \n\n 웹디자인 또한 화면 속에서 디자인을 직접만들고 사람들에게 만족감을 줄 수 있다라는 점이 비슷하다고 느껴져 자연스럽게 웹디자인에 관심을 갖게 되었습니다. ";
+    const content =
+        "예전부터 손으로 사부작사부작 무언가를 만들어 주변사람들에게 선물하는 것을 좋아했습니다. \n\n 저로인해 누군가가 행복함을 느낀다라는 것이 저 자신에게도 행복함과 뿌듯함으로 다가왔습니다. \n\n 웹디자인 또한 화면 속에서 디자인을 직접만들고 사람들에게 만족감을 줄 수 있다라는 점이 비슷하다고 느껴져 자연스럽게 웹디자인에 관심을 갖게 되었습니다. ";
     const text = document.querySelector(".text_box span");
     let i = 0;
     let start = false;
     let stop;
-
 
     function typing() {
         let txt = content[i++];
@@ -32,23 +30,23 @@ $(function () {
     }
     // stop = setInterval(typing, 100)
 
-
     //con02
 
-    gsap.timeline({
-        scrollTrigger: {
-            trigger: "#con02 .inner",
-            start: "0% 5%",
-            end: "0% 10%",
-            scrub: 2,
-            // markers: true,
-        }
-    })
+    gsap
+        .timeline({
+            scrollTrigger: {
+                trigger: "#con02 .inner",
+                start: "0% 5%",
+                end: "0% 10%",
+                scrub: 2,
+                // markers: true,
+            },
+        })
         .fromTo(
-            "#con02 .inner", { "clip-path": "inset(60% 60% 60% 60% round 20%)" }, { "clip-path": "inset(0% 0% 0% 0% round 0%)", ease: "none", duration: 10 }
-        )
-
-
+            "#con02 .inner",
+            { "clip-path": "inset(60% 60% 60% 60% round 20%)" },
+            { "clip-path": "inset(0% 0% 0% 0% round 0%)", ease: "none", duration: 10 }
+        );
 
     //con03
     var swiper = new Swiper(".mySwiper", {
@@ -84,10 +82,15 @@ $(function () {
 
     //con04
 
-    let total = $("#con04 .inner .wrap li:nth-child(2)> .museum, .mayplace").length;
-    console.log(total);
-
+    let slides = $("#con04 .con04Fade > li");
+    let total = slides.length;
     let j = 0;
+    let stop01;
+
+    function fade() {
+        slides.fadeOut();
+        slides.eq(j).fadeIn();
+    }
 
     function start01() {
         stop01 = setInterval(function () {
@@ -122,14 +125,8 @@ $(function () {
         start01();
     });
 
+    fade();
     start01();
-
-
-    function fade() {
-        $("#con04 .inner .wrap li:nth-child(2)> .museum, .mayplace").fadeOut();
-        $("#con04 .inner .wrap li:nth-child(2)> .museum, .mayplace").eq(j).fadeIn();
-    }
-
 
     //con05
     gsap.utils.toArray("section").forEach((section, i) => {
@@ -142,8 +139,8 @@ $(function () {
                 // pinSpacing: false,
                 pinSpacing: i === 2 ? true : false,
                 // markers: true,
-            }
-        })
+            },
+        });
     });
 
     $("#con05 .pro").on("click", function () {
@@ -152,7 +149,6 @@ $(function () {
     $("#con05 #xmark").on("click", function () {
         $("#con05 #modalBox").removeClass("on");
     });
-
 
     //scroll
     let visual = $("#visual").offset().top;
@@ -169,20 +165,19 @@ $(function () {
         let sc = $(this).scrollTop();
         console.log(sc);
 
-        // 헤더 
+        // 헤더
         if (sc >= 50) {
             $("header").addClass("in");
         } else {
             $("header").removeClass("in");
         }
 
-        // con01 
+        // con01
         if (sc >= visual && sc < con01 && !start) {
             $("#con01 .inner .left").addClass("on");
             $("#con01 .inner .right").addClass("on");
             start = true;
             stop = setInterval(typing, 80);
-
         }
 
         //con03
@@ -195,7 +190,6 @@ $(function () {
             $("#con04 .inner ul").addClass("on");
         }
 
-
         // con06
         if (sc >= con06) {
             $("#con06 .wrap").addClass("on");
@@ -203,5 +197,4 @@ $(function () {
             $("#con06 .wrap").removeClass("on");
         }
     });
-
-})
+});
