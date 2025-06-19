@@ -6295,7 +6295,6 @@ body {
     box-sizing: border-box;
     display: flex;
     justify-content: left;
-    padding-left: 2rem;
     gap: 35vw;
     align-items: center;
     box-sizing: border-box;
@@ -6311,13 +6310,16 @@ body {
     height: 100%;
     background-color: #fff;
     position: relative;
+    overflow: hidden;
   }
 
-  #con04 .inner .wrap li:nth-child(2)>ul {
+  #con04 .inner .wrap li:nth-child(2)>.museum,
+  .mayplace {
     position: absolute;
     top: 0%;
     left: 0%;
     display: none;
+    width: 100%;
   }
 
   #con04 .inner .wrap li:nth-child(2)>.museum {
@@ -6449,7 +6451,7 @@ body {
 
   /*more*/
 
-  #con04 .more {
+  #con04 .plan {
     font-size: 1.5rem;
     padding-top: 3rem;
     box-sizing: border-box;
@@ -6458,7 +6460,7 @@ body {
     text-align: center;
   }
 
-  #con04 .more .pro {
+  #con04 .plan a {
     display: inline-block;
     position: relative;
     color: #fff;
@@ -6477,7 +6479,7 @@ body {
     cursor: pointer;
   }
 
-  #con04 .more .pro:after {
+  #con04 .plan a:after {
     position: absolute;
     content: "";
     width: 100%;
@@ -6493,73 +6495,15 @@ body {
     transition: all 0.3s ease;
   }
 
-  #con04 .more .pro:hover {
+  #con04 .plan a:hover {
     color: #4F4F50;
   }
 
-  #con04 .more .pro:hover:after {
+  #con04 .plan a:hover:after {
     top: auto;
     bottom: 0;
     height: 100%;
   }
-
-  /*modalBox*/
-  #con04 #modalBox,
-  #con04 .modalBox {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-    position: fixed;
-    z-index: 10;
-    left: 0%;
-    top: 0%;
-  }
-
-  #con04 #modalBox.on {
-    display: flex;
-  }
-
-  #con04 .modalBox.on {
-    display: flex;
-  }
-
-  /*modalContent*/
-  #con04 #modalContent,
-  #con04 .modalContent {
-
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 1.5rem;
-    width: 80%;
-    height: 100%;
-    overflow-y: scroll;
-    margin: 0px auto;
-    text-align: center;
-  }
-
-  #con04 #xmark,
-  #con04 .xmark {
-    position: absolute;
-    right: 11%;
-    top: 2%;
-    font-size: 3rem;
-    cursor: pointer;
-    color: #87b6e2;
-  }
-
-  #con04 #modalContent h2,
-  #con04 .modalContent h2 {
-    letter-spacing: 2px;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-
-
-  #con04 #modalContent img,
-  #con04 .modalContent img {
-    width: 80%
-  }
-
 
 
   /*con05*/
@@ -6721,7 +6665,7 @@ body {
   }
 
   /*btn*/
-  #con05 .btn a {
+  #con05 .more .btn a {
     display: inline-block;
     position: relative;
     color: #fff;
@@ -6739,7 +6683,7 @@ body {
     z-index: 1;
   }
 
-  #con05 .btn a:after {
+  #con05 .more .btn a:after {
     position: absolute;
     content: "";
     width: 100%;
@@ -6755,7 +6699,7 @@ body {
     transition: all 0.3s ease;
   }
 
-  #con05 .btn a:hover {
+  #con05 .more .btn a:hover {
     color: #4F4F50;
   }
 
@@ -6765,7 +6709,7 @@ body {
     height: 100%;
   }
 
-  #con05 .pro {
+  #con05 .more .pro {
     display: inline-block;
     position: relative;
     color: #fff;
@@ -6784,7 +6728,7 @@ body {
     cursor: pointer;
   }
 
-  #con05 .pro:after {
+  #con05 .more .pro:after {
     position: absolute;
     content: "";
     width: 100%;
@@ -6800,11 +6744,11 @@ body {
     transition: all 0.3s ease;
   }
 
-  #con05 .pro:hover {
+  #con05 .more .pro:hover {
     color: #4F4F50;
   }
 
-  #con05 .pro:hover:after {
+  #con05 .more .pro:hover:after {
     top: auto;
     bottom: 0;
     height: 100%;

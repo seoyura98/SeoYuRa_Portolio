@@ -84,11 +84,10 @@ $(function () {
 
     //con04
 
-    let total = $("#con04 .inner .wrap li:nth-child(2) > ul").length;
+    let total = $("#con04 .inner .wrap li:nth-child(2)> .museum, .mayplace").length;
     console.log(total);
 
     let j = 0;
-    start01();
 
     function start01() {
         stop01 = setInterval(function () {
@@ -114,8 +113,8 @@ $(function () {
 
     $("#con04 .prev").on("click", function () {
         clearInterval(stop01);
-        if (j == total - 1) {
-            j = 0;
+        if (j == 0) {
+            j = total - 1;
         } else {
             j--;
         }
@@ -127,23 +126,9 @@ $(function () {
 
 
     function fade() {
-        $("#con04 .inner .wrap li:nth-child(2) > ul").fadeOut();
-        $("#con04 .inner .wrap li:nth-child(2) > ul").eq(j).fadeIn();
+        $("#con04 .inner .wrap li:nth-child(2)> .museum, .mayplace").fadeOut();
+        $("#con04 .inner .wrap li:nth-child(2)> .museum, .mayplace").eq(j).fadeIn();
     }
-
-    $("#con04 .museum .pro").on("click", function () {
-        $("#con04 .modalBox").addClass("on");
-    });
-    $("#con04 .xmark").on("click", function () {
-        $("#con04 .modalBox").removeClass("on");
-    });
-
-    $("#con04 .mayplace .pro").on("click", function () {
-        $("#con04 #modalBox").addClass("on");
-    });
-    $("#con04 #xmark").on("click", function () {
-        $("#con04 #modalBox").removeClass("on");
-    });
 
 
     //con05
