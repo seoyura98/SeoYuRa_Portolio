@@ -1509,7 +1509,6 @@ body {
 
   /*com*/
   #con06 .com {
-    text-align: center;
     width: 100%;
     margin: 0px auto;
     position: relative;
@@ -1528,8 +1527,7 @@ body {
     top: 10%;
     left: 50%;
     transform: translateX(-50%);
-    text-align: left;
-    padding-left: 1rem;
+    padding-left: 0.8rem;
     box-sizing: border-box;
     word-break: break-word;
   }
@@ -1544,6 +1542,7 @@ body {
     font-size: 2.3vw;
     line-height: 1.5;
     letter-spacing: 1px;
+    word-break: break-word;
   }
 
   #con06 .com .txt .infor {
