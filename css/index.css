@@ -304,11 +304,13 @@ body {
     width: 100%;
     height: 100%;
     text-align: center;
+    padding: 1rem 0rem;
+    box-sizing: border-box;
   }
 
   #con01 .inner .left ul li:nth-child(2) img {
-    width: 90%;
-    height: 100%;
+    width: 50%;
+    /* height: 100%; */
   }
 
   /*right*/
@@ -1800,11 +1802,13 @@ body {
     width: 100%;
     height: 100%;
     text-align: center;
+    padding: 1rem 0rem;
+    box-sizing: border-box;
   }
 
   #con01 .inner .left ul li:nth-child(2) img {
-    width: 90%;
-    height: 100%;
+    width: 50%;
+    /* height: 100%; */
   }
 
   /*right*/
@@ -3295,11 +3299,13 @@ body {
     width: 100%;
     height: 100%;
     text-align: center;
+    padding: 1rem 0rem;
+    box-sizing: border-box;
   }
 
   #con01 .inner .left ul li:nth-child(2) img {
-    width: 90%;
-    height: 100%;
+    width: 50%;
+    /* height: 50%; */
   }
 
   /*right*/
@@ -4795,11 +4801,13 @@ body {
     width: 100%;
     height: 100%;
     text-align: center;
+    padding-top: 8rem;
+    box-sizing: border-box;
   }
 
   #con01 .inner .left ul li:nth-child(2) img {
-    width: 90%;
-    height: 100%;
+    width: 80%;
+    /* height: 90%; */
   }
 
   /*right*/
@@ -6275,11 +6283,13 @@ body {
     width: 100%;
     height: 100%;
     text-align: center;
+    padding-top: 5rem;
+    box-sizing: border-box;
   }
 
   #con01 .inner .left ul li:nth-child(2) img {
-    width: 90%;
-    height: 100%;
+    width: 80%;
+    /* height: 90%; */
   }
 
   /*right*/
