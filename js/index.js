@@ -88,8 +88,11 @@ $(function () {
     let stop01;
 
     function fade() {
-        slides.fadeOut();
-        slides.eq(j).fadeIn();
+        // slides.fadeOut();
+        // slides.eq(j).fadeIn();
+
+        slides.removeClass("active");
+        slides.eq(j).addClass("active");
     }
 
     function start01() {

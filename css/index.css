@@ -932,16 +932,30 @@ body {
   .con04Fade {
     width: 100%;
     height: 100%;
+    position: relative;
+    min-height: 650px;
   }
 
   .con04Fade>li {
-    display: none;
+    /* display: none; */
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .con04Fade>li.active {
+    /* display: block; */
+    opacity: 1;
+    z-index: 1;
   }
 
   .con04Fade .museum_box {
     width: 100%;
     height: 100%;
-    display: block;
+    /* display: block; */
   }
 
   .con04Fade .mayplace_box {
@@ -951,14 +965,14 @@ body {
 
   #con04 .inner .wrap>.wrap_box>.museum,
   .mayplace {
-    position: absolute;
+    /* position: absolute;
     top: 0%;
-    left: 0%;
+    left: 0%; */
     width: 100%;
   }
 
   #con04 .inner .wrap>.wrap_box>.museum {
-    z-index: 1;
+    /* z-index: 1; */
   }
 
   /*museum*/
@@ -979,13 +993,10 @@ body {
     align-items: center; */
   }
 
-
-
   /*left*/
   #con04 .inner .wrap .wrap_box .left {
     width: 50%;
     margin: 2rem auto;
-
   }
 
   #con04 .inner .wrap .wrap_box .left div {
@@ -2429,16 +2440,27 @@ body {
   .con04Fade {
     width: 100%;
     height: 100%;
+    position: relative;
+    min-height: 700px;
   }
 
   .con04Fade>li {
-    display: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .con04Fade>li.active {
+    opacity: 1;
+    z-index: 1;
   }
 
   .con04Fade .museum_box {
     width: 100%;
     height: 100%;
-    display: block;
   }
 
   .con04Fade .mayplace_box {
@@ -2448,15 +2470,9 @@ body {
 
   #con04 .inner .wrap>.wrap_box>.museum,
   .mayplace {
-    position: absolute;
-    top: 0%;
-    left: 0%;
     width: 100%;
   }
 
-  #con04 .inner .wrap>.wrap_box>.museum {
-    z-index: 1;
-  }
 
   /*museum*/
   #con04 .inner .wrap>.wrap_box .museum {
@@ -3929,16 +3945,29 @@ body {
   .con04Fade {
     width: 100%;
     height: 100%;
+    position: relative;
+    min-height: 800px;
   }
 
   .con04Fade>li {
-    display: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 1s ease-in-out;
   }
+
+  .con04Fade>li.active {
+    opacity: 1;
+    z-index: 1;
+  }
+
 
   .con04Fade .museum_box {
     width: 100%;
     height: 100%;
-    display: block;
+
   }
 
   .con04Fade .mayplace_box {
@@ -3948,15 +3977,12 @@ body {
 
   #con04 .inner .wrap>.wrap_box>.museum,
   .mayplace {
-    position: absolute;
+    /* position: absolute;
     top: 0%;
-    left: 0%;
+    left: 0%; */
     width: 100%;
   }
 
-  #con04 .inner .wrap>.wrap_box>.museum {
-    z-index: 1;
-  }
 
   /*museum*/
   #con04 .inner .wrap>.wrap_box .museum {
@@ -5434,13 +5460,19 @@ body {
   }
 
   .con04Fade>li {
-    display: none;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .con04Fade>li.active {
+    opacity: 1;
+    z-index: 1;
   }
 
   .con04Fade .museum_box {
     width: 100%;
     height: 100%;
-    display: block;
   }
 
   .con04Fade .mayplace_box {
@@ -6917,13 +6949,22 @@ body {
   }
 
   .con04Fade>li {
-    display: none;
+    /* position: absolute;
+    left: 0px;
+    top: 0px; */
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .con04Fade>li.active {
+    opacity: 1;
+    z-index: 1;
   }
 
   .con04Fade .museum_box {
     width: 100%;
     height: 100%;
-    display: block;
   }
 
   .con04Fade .mayplace_box {
@@ -6939,9 +6980,6 @@ body {
     width: 100%;
   }
 
-  #con04 .inner .wrap>.wrap_box>.museum {
-    z-index: 1;
-  }
 
   /*museum*/
   #con04 .inner .wrap>.wrap_box .museum {
