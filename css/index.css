@@ -933,7 +933,7 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
-    min-height: 650px;
+    min-height: 700px;
   }
 
   .con04Fade>li {
@@ -2441,7 +2441,7 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
-    min-height: 700px;
+    min-height: 750px;
   }
 
   .con04Fade>li {
@@ -2518,7 +2518,6 @@ body {
 
   #con04 .inner .wrap>.wrap_box .right .ri_tit {
     font-size: 6vw;
-    margin-top: 2rem;
     margin-bottom: 1rem;
     color: #87b6e2;
     letter-spacing: 5px;
