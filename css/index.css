@@ -1507,13 +1507,11 @@ body {
   /*txt*/
 
   #con06 .com .txt {
-    width: 90%;
+    width: 85%;
     position: absolute;
     top: 10%;
     left: 50%;
     transform: translateX(-50%);
-    padding-left: 0.8rem;
-    box-sizing: border-box;
     word-break: break-word;
   }
 
@@ -1524,14 +1522,15 @@ body {
   }
 
   #con06 .com .txt p {
-    font-size: 2.3vw;
+    font-size: 2.4vw;
     line-height: 1.5;
     letter-spacing: 1px;
     word-break: break-word;
+    margin-bottom: 0.5rem;
   }
 
   #con06 .com .txt .infor {
-    width: 90%;
+    /* width: 90%; */
     display: flex;
     justify-content: space-between;
     font-weight: bold;
@@ -1540,8 +1539,6 @@ body {
   #con06 .com .txt .infor p {
     font-size: 2.5vw;
     letter-spacing: 1px;
-    padding-top: 0.5rem;
-    box-sizing: border-box;
   }
 }
 
@@ -3009,14 +3006,12 @@ body {
   /*txt*/
 
   #con06 .com .txt {
-    width: 80%;
+    width: 85%;
     position: absolute;
     top: 10%;
     left: 50%;
     transform: translateX(-50%);
     text-align: left;
-    padding-left: 1rem;
-    box-sizing: border-box;
     word-break: break-word;
   }
 
@@ -3028,8 +3023,9 @@ body {
 
   #con06 .com .txt p {
     font-size: 2.5vw;
-    line-height: 1.5;
+    line-height: 1.6;
     letter-spacing: 1px;
+    margin-bottom: 0.5rem;
   }
 
   #con06 .com .txt .infor {
@@ -4513,7 +4509,7 @@ body {
   /*txt*/
 
   #con06 .com .txt {
-    width: 70%;
+    width: 80%;
     position: absolute;
     top: 10%;
     left: 50%;
@@ -4532,8 +4528,9 @@ body {
 
   #con06 .com .txt p {
     font-size: 2.3vw;
-    line-height: 1.5;
+    line-height: 1.6;
     letter-spacing: 1px;
+    margin-bottom: 0.5rem;
   }
 
   #con06 .com .txt .infor {
@@ -6019,7 +6016,7 @@ body {
   /*txt*/
 
   #con06 .com .txt {
-    width: 70%;
+    width: 75%;
     position: absolute;
     top: 18%;
     left: 50%;
@@ -6040,6 +6037,7 @@ body {
     font-size: 2vw;
     line-height: 1.5;
     letter-spacing: 1px;
+    margin-bottom: 0.5rem;
   }
 
   #con06 .com .txt .infor {
@@ -7514,7 +7512,7 @@ body {
   /*txt*/
 
   #con06 .com .txt {
-    width: 45%;
+    width: 42%;
     position: absolute;
     top: 10%;
     left: 50%;
@@ -7528,13 +7526,13 @@ body {
   #con06 .com .txt h4 {
     font-size: 2rem;
     color: #fff;
-    margin-bottom: 1.2rem;
+    margin: 1rem 0rem;
   }
 
   #con06 .com .txt p {
     font-size: 1.4vw;
-    line-height: 1.5;
-    margin-bottom: 0.4rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
     letter-spacing: 1px;
   }
 
