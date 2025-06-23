@@ -1187,6 +1187,11 @@ body {
     box-sizing: border-box;
   }
 
+  .seoul .cloneWarp .contBox {
+    padding-bottom: 1rem;
+    box-sizing: border-box;
+  }
+
   .cloneWarp .contBox li {
     width: 50%;
   }
