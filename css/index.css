@@ -1176,7 +1176,7 @@ body {
     border-radius: 20px 20px 0px 0px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
     overflow: hidden;
-    position: relative;
+    padding-bottom: 6rem;
   }
 
   /*contBox*/
@@ -1196,7 +1196,6 @@ body {
     text-align: center;
     width: 90%;
     /* height: 40%; */
-    padding-bottom: 6rem;
   }
 
   .cloneWarp .contBox li .img {
